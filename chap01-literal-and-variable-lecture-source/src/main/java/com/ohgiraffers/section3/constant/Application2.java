@@ -19,6 +19,6 @@ public class Application2 {
         // 단어와 단어 연결은 언더스코어 사용한다.
         final int MAX_AGE = 40;
         final int MIN_AGE = 20;
-        
+
     }
 }
