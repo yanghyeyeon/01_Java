@@ -21,6 +21,7 @@ public class Application1 {
         * */
 
         // 수업목표 : 여러 가진 값의 형태를 출력 할 수 있다.
+        //변경
 
         // 정수 출력
         System.out.println(123);
