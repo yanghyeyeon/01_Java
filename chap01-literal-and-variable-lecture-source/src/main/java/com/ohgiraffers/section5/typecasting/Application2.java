@@ -64,13 +64,13 @@ public class Application2 {
 
 
         /*강제 형변환을 해도 논리형은 규칙에서 제외된다*/
-        //boolean isTrue = true;
-        //byte b = (byte) isTrue;
-        //short s = (short) isTrue;
-        //int i = (int) isTrue;
-        //float f = (float) isTrue;
-        //double d = (double) isTrue;
-        //char c = (char) isTrue;
+//        boolean isTrue = true;
+//        byte b = (byte) isTrue;
+//        short s = (short) isTrue;
+//        int i = (int) isTrue;
+//        float f = (float) isTrue;
+//        double d = (double) isTrue;
+//        char c = (char) isTrue;
 
 
         
