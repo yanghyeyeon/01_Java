@@ -4,7 +4,7 @@ public class Application5 {
     public static void main(String[] args) {
 
         /*
-        * retrun(반환)
+        * return(반환)
         *
         * 모든 메소드의 내부에는 return; 이 존재한다.
         * void 메소드의 경우 return; 명시적으로 작성하지 않아도, 컴파일러가 마지막줄에 자동으로 추가해준다.
