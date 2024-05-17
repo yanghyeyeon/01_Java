@@ -77,6 +77,9 @@ public class Application1 {
         boolean isTrue = sc.nextBoolean();
         System.out.println("입력하신 논리 값은 " + isTrue + "입니다.");
 
+        // 에러 발생 : 개행문자가 남아있기 때문에
+
+        sc.nextLine(); // 추가 해줘야함
 
         System.out.println("아무 문자나 입력하세요 : ");
         String str = sc.nextLine();
