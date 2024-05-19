@@ -1,5 +1,6 @@
 package com.ynaghyeyeon.practice;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class IfElseIf {
@@ -36,5 +37,33 @@ public class IfElseIf {
         }
 
         System.out.println(price + "원을 투입주세요");
+    }
+
+    public void testIfElseIfBmi () {
+
+
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("당신의 체중(kg)을 입력해주세요 : ");
+        int weight = sc.nextInt();
+
+        System.out.println("당신의 키(m)를 입력해주세요 : ");
+        double height = sc.nextDouble();
+
+        int BMI = (int)(weight / (height * height));
+
+        if (BMI < 20 ) {
+            System.out.println("당신은 저체중 입니다.");
+        } else if (BMI < 25) {
+            System.out.println("당신은 정상체중 입니다.");
+        } else if (BMI < 30) {
+            System.out.println("당신은 과체중 입니다.");
+        } else {
+            System.out.println("당신은 비만입니다.");
+        }
+
+        System.out.println("당신의 BMI는 " + BMI + "입니다." );
+
     }
 }

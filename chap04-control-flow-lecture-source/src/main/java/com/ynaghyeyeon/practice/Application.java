@@ -9,7 +9,8 @@ public class Application {
 
         IfElseIf ifelseif = new IfElseIf();
 
-        ifelseif.testIfElseif();
+        //ifelseif.testIfElseif();
+        ifelseif.testIfElseIfBmi();
 
     }
 }
