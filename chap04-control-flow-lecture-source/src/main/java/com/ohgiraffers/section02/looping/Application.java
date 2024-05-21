@@ -17,7 +17,7 @@ public class Application {
         //a_nested_for.printGugudanFromTwoToNine();
         //a_nested_for.printUpgradeGugudanFromTwoToNine();
         //a_nested_for.printStarInputRowTimes();
-        a_nested_for.printTriangleStars();
+        //a_nested_for.printTriangleStars();
 
         B_while b_while = new B_while();
         //b_while.testSimpleWhileStatement();
@@ -31,7 +31,7 @@ public class Application {
 
         Practice practice = new Practice();
         //practice.testStar();
-        //practice.testStar1();
+        practice.testStar1();
         //practice.testStar2();
 
     }
