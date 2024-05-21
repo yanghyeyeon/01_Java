@@ -39,7 +39,7 @@ public class Application2 {
 
         System.out.println("sarr의 hashCode : " + sarr.hashCode());
 
-        for ( int i = 9; i < sarr.length; i++) {
+        for ( int i = 0; i < sarr.length; i++) {
             System.out.print(sarr[i] + " ");
         }
         System.out.println();
