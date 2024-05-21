@@ -35,7 +35,7 @@ public class Application2 {
         return animals;
     }
 
-    public static void print(String[] sarr) {
+    public static void print(String[] sarr) { // sarr에서 이미 얕은 복사가 이루어짐
 
         System.out.println("sarr의 hashCode : " + sarr.hashCode());
 
