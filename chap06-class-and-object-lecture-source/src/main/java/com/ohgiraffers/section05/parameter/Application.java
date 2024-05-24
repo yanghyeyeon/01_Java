@@ -9,7 +9,7 @@ public class Application {
     * 1. 기본자료형
     * 2. 기본자료형 배열
     * 3. 클래스자료형
-    * 4. 크래스자료형 배열
+    * 4. 클래스자료형 배열
     * 5. 가변인자
     * */
 
@@ -43,6 +43,14 @@ public class Application {
         System.out.println("============== 변경 후 원본 사각형의 넓이와 둘레 ==============");
         r1.calcArea(); // 넓이 출력
         r1.calcRound(); // 둘레 출력
+
+        // 가변인자
+        //pt.testVariableLengthArrayParameter();
+        pt.testVariableLengthArrayParameter("홍길동"); // 가변인자가 전달되지 않아도 괜찮음
+        pt.testVariableLengthArrayParameter("홍길동","볼링"); // 1개 가능
+        pt.testVariableLengthArrayParameter("홍길동", "볼링","당구");
+        pt.testVariableLengthArrayParameter("신사임당", new String[]{"테니스", "서예"}); // 배열도 가능
+
     }
 
 
