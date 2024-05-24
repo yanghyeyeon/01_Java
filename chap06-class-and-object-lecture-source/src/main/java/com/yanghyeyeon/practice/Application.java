@@ -21,6 +21,18 @@ public class Application {
 
         System.out.println(book.getInfo());
 
+//        Car car = new Car("Tesla Model S", 2022, "전기차");
+//        System.out.println(car.getInfo());
+
+        Car car1 = new Car();
+        car1.setModel("Tesla Model S");
+        car1.setYear(2022);
+        car1.setEngine("전기차");
+        System.out.println(car1.getInfo());
+
+
+
+
 
     }
 }
