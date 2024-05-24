@@ -51,9 +51,9 @@ public class User {
                 "name=" + this.name + ", enrollDate=" + this.enrollDate + "]";
     }
 
-    // 매개녀수 있는 생성자 (id, pwd, name의 초기화를 담당)
+    // 매개변수 있는 생성자 (id, pwd, name의 초기화를 담당)
     public User (String id, String pwd, String name) {
-        // 매개변수 있는 생성자의 주목적 -> 인스턴스 생성 시점에 필ㄷ르를 원하는 값으로 초기화하기 위함
+        // 매개변수 있는 생성자의 주목적 -> 인스턴스 생성 시점에 필드를 원하는 값으로 초기화하기 위함
         this.id = id;
         this.pwd = pwd;
         this.name = name;
