@@ -79,7 +79,7 @@ public class MemberDTO {
     public double getWeight() {
         return weight;
     }
-    
+
     //boolean의 접근자는 get으로 시작하지 않고 is로 시작하는 것이 관례
     public boolean isActivated() {
         return isActivated;
