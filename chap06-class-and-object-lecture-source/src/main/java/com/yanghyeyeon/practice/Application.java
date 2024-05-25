@@ -41,6 +41,8 @@ public class Application {
         man1.setKids(3);
         System.out.println(man1.getInfo());
 
+        Notebook notebook = new Notebook("Dell","XPS 13", 16,512);
+
 
 
 
