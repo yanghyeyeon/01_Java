@@ -41,11 +41,16 @@ public class Application {
         man1.setKids(3);
         System.out.println(man1.getInfo());
 
-        Notebook notebook = new Notebook("Dell","XPS 13", 16,512);
+//        Notebook notebook = new Notebook("Dell","XPS 13", 16,512);
 
+        Notebook notebook1 = new Notebook();
 
+        notebook1.setBrand("Dell");
+        notebook1.setModel("XPS 13");
+        notebook1.setRam(16);
+        notebook1.setSsd(512);
 
-
+        System.out.println(notebook1.getInfo());
 
 
     }
