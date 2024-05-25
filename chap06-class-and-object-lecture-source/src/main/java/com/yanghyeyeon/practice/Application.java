@@ -30,6 +30,18 @@ public class Application {
         car1.setEngine("전기차");
         System.out.println(car1.getInfo());
 
+//        Man man = new Man(30,"James",'남',true, 3);
+
+        Man man1 = new Man();
+
+        man1.setName("James");
+        man1.setAge(30);
+        man1.setGender('남');
+        man1.setMarried(true);
+        man1.setKids(3);
+        System.out.println(man1.getInfo());
+
+
 
 
 
