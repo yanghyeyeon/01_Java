@@ -17,12 +17,14 @@ public class Car {
 
     // 메서드를 이용한
     public void setModel (String model) {
+
         this.model =  model;
     }
     public void setYear (int year) {
         this.year = year;
     }
     public void setEngine(String engine) {
+
         this.engine = engine;
     }
 
