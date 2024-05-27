@@ -14,6 +14,7 @@ public class MemberRepository {
 
     public static boolean store(Member[] newMembers) {
 
+        // 저장을 할 때 앞에서 부터 저장이 되면 안되고, 빈공간에 저장하기 위해 인덱스값에 기록을 남겨놓는 것.
         for(int i= 0; i < newMembers.length; i++) {
             members[count++] = newMembers[i];
         }
