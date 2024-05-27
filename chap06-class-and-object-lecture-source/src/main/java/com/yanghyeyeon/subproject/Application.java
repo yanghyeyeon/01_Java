@@ -42,7 +42,7 @@ public class Application {
          *       재고량을 관리
          * */
         Kiosk kiosk = new Kiosk();
-//        kiosk.menu();
+        kiosk.menu();
 
 //        new Kiosk().menu();
     }
