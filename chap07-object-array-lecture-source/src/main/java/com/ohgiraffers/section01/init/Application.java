@@ -57,5 +57,10 @@ public class Application {
         , new Car("포터",500)
 
         };
+
+        System.out.println("=============== 할당과 동시에 초기화 ===============");
+        for(Car c : carArray3) {
+            c.dirveMaxSpeed();
+        }
     }
 }
