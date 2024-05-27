@@ -20,4 +20,10 @@ public class MemberRepository {
 
         return true;
     }
+
+    public static Member[] findAllMembers() {
+        // 지금 가지고 있는 멤버만 넘겨줌
+
+        return members;
+    }
 }

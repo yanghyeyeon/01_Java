@@ -38,7 +38,7 @@ public class Application {
             switch (no) {
                 case 1: memberService.signUpMembers();
                     break;
-                case 2:
+                case 2: memberService.showAllMembers();
                     break;
                 case 9:
                     System.out.println("프로그램을 종료합니다.");

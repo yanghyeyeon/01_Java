@@ -17,4 +17,10 @@ public class MemberService {
 
         memberRegister.regist(members);
     }
+
+    public void showAllMembers() {
+
+        MemberFinder finder = new MemberFinder();
+
+    }
 }
