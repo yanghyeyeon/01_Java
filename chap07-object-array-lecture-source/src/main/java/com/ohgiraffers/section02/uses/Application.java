@@ -22,6 +22,7 @@ public class Application {
         * 2. 회원 정보는 최대 10명까지 지정할 수 있다.
         * */
 
+        
         Scanner sc = new Scanner(System.in);
         MemberService memberService = new MemberService();
 

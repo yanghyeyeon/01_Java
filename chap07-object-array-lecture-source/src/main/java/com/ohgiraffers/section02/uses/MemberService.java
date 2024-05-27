@@ -4,7 +4,6 @@ public class MemberService {
     // 연결만 해주는 곳이고, 실제 구현은 다른곳에서 한다.
 
     public void signUpMembers() {
-
         Member[] members = new Member[5];
 
         members[0] = new Member(1, "user01", "pass01", "홍길동", 20, '남');

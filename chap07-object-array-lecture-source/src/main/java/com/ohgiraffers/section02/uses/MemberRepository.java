@@ -2,6 +2,7 @@ package com.ohgiraffers.section02.uses;
 
 public class MemberRepository {
 
+
     // 정보 저장
     private  final static Member[] members;
 
