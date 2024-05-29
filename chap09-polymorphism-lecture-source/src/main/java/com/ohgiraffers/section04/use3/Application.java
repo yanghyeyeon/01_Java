@@ -4,7 +4,7 @@ public class Application {
 
     public static void main(String[] args) {
 
-        Dice dice = new HellDice(); // SuperDice로 변경해도 작동되게
+        Dice dice = new SuperDice(); // SuperDice로 변경해도 작동되게
 
         Dicer dicer = new Dicer();
 
