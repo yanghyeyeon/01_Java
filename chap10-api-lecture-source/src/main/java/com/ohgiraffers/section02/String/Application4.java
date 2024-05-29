@@ -44,5 +44,6 @@ public class Application4 {
         for(String s : sarr) {
             System.out.println(s);
         }
+
     }
 }
