@@ -49,7 +49,7 @@ public class Application1 {
          * */
         String indexStr = "java oracle";
         System.out.println("indexStr('a') = " + indexStr.indexOf('a'));
-        System.out.println("indexStr('z') = " + indexStr.indexOf('b'));
+        System.out.println("indexStr('z') = " + indexStr.indexOf('z'));
 
         /*
         * trim() : 문자열의 앞 뒤 고백을 제거한 문자열을 반환한다.
