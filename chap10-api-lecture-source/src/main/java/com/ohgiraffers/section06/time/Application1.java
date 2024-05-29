@@ -1,7 +1,6 @@
 package com.ohgiraffers.section06.time;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
+import java.time.*;
 
 public class Application1 {
 
@@ -41,6 +40,24 @@ public class Application1 {
         /*
         * ZoneDateTime
         * 날짜와 시간, 시간대를 함께 포함하는 클래스
+        * - 연도, 월, 일, 시, 분, 초, 시간대
+        * -  2024-05-29T14:3:15.123+02:00[Asia/Seoul]
         * */
+        ZonedDateTime zonedDateTime = ZonedDateTime.now();
+        System.out.println("zonedDateTime = " + zonedDateTime);
+        ZonedDateTime zsomedDateTimeOf = ZonedDateTime.of(dateOf,timeOf, ZoneId.of("Asia/Seoul"));
+        System.out.println("zonedDateTimeOf = " + zsomedDateTimeOf);
+
+        /*
+        * LocalDateTime
+        * 날짜와 시간을 함께 표현하는 클래스
+        * - 연도, 월, 일, 시, 분,초, 나노초
+        * - 2024-05-29T14:0:15.123
+        * */
+        LocalDateTime dateTimeNow = LocalDateTime.now();
+        System.out.println("dateTimeNow = " + dateTimeNow);
+        LocalDateTime localDateTimeOf = LocalDateTime.of(2024,5,9,9,30,15,123000000);
+        System.out.println("localDateTimeOF = " + localDateTimeOf);
+
     }
 }
