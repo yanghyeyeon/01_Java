@@ -4,6 +4,7 @@ import com.ohgiraffers.api.member.Member;
 
 import java.lang.reflect.Array;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 
 public class Run {
@@ -25,11 +26,16 @@ public class Run {
 
             Member member = new Member();
             member.setMemberName(secondSplit[1]);
-            member.setMemberNo(Integer.parseInt(firstSplit[0]));
-            member.setHeight(Integer.parseInt(firstSplit[2]));
-            member.setWeight(Integer.parseInt(firstSplit[3]));
-            LocalDate
+            member.setMemberNo(Integer.parseInt(secondSplit[0]));
+            member.setHeight(Integer.parseInt(secondSplit[2]));
+            member.setWeight(Integer.parseInt(secondSplit[3]));
+            LocalDate birth = LocalDate.parse(secondSplit[4], DateTimeFormatter.ofPattern("yyyyMMdd"));
+            member.setBirth(birth);
+
+            members[i] = member;
         }
+
+        System.out.println(Arrays.toString(members));
 
 
 
