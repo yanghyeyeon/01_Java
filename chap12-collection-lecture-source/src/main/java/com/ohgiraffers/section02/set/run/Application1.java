@@ -1,2 +1,4 @@
-package com.ohgiraffers.section02.set.run;public class Application1 {
+package com.ohgiraffers.section02.set.run;
+
+public class Application1 {
 }
