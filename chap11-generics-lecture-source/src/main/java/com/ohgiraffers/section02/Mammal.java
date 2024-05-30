@@ -1,2 +1,4 @@
-package com.ohgiraffers.section02;public class Mammal {
+package com.ohgiraffers.section02;
+
+public class Mammal implements Animal{
 }
