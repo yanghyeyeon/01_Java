@@ -3,6 +3,7 @@ package com.ohgiraffers.api.member.run;
 import com.ohgiraffers.api.member.Member;
 
 import java.lang.reflect.Array;
+import java.time.LocalDate;
 import java.util.Arrays;
 
 public class Run {
