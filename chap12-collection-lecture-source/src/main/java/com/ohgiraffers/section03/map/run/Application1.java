@@ -30,7 +30,7 @@ public class Application1 {
 
         // put()
         // 키와 값 둘다 객체여야한다.
-        // atuoBoxing처리 된다. 12 => new Integer(12)
+        // autoBoxing처리 된다. 12 => new Integer(12)
         hMap.put("one", new Date());
         hMap.put(12,"red apple");
         hMap.put(33,123);
