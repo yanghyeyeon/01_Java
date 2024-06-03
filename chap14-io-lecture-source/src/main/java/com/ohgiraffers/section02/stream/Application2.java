@@ -1,5 +1,6 @@
 package com.ohgiraffers.section02.stream;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -20,8 +21,28 @@ public class Application2 {
         try {
             fr = new FileReader("src/main/java/com/ohgiraffers/section02/stream/testReader.txt");
 
+//            int value;
+//            while ((value = fr.read()) != -1) {
+//                System.out.println((char) value);
+//            }
+
+            int size = (int) new File("src/main/java/com/ohgiraffers/section02/stream/testReader.txt").length();
+
+            System.out.println("size = " + size);
+
+            char[] carr = new char[size];
+
+            fr.read(carr);
+
+            for( int i = 0; i < carr.length; i++) {
+
+                System.out.println(carr[i]);
+            }
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         } finally {
             // 자원 반납
             if(fr != null) {
