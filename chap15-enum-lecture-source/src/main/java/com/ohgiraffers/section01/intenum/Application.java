@@ -27,7 +27,26 @@ public class Application {
         }
 
         // 2. 문자열로 출력하기가 까다롭다.
-        int num = 0;
+        int num = 1;
+        String subjectText = "";
+
+        // switch문을 int를 매개변수로 입력받고
+        // return없고. 과목명을 출력하는 메소드
+        // static, printSubject() {}
+        switch (num) {
+            case Subjects.JAVA : subjectText = "JAVA"; break;
+            case Subjects.JDBC : subjectText = "JDBC"; break;
+            case Subjects.ORACLE : subjectText = "ORACLE"; break;
+        }
+
+        System.out.println("subjectText : " + subjectText);
+
+        // 3. 타입 안전을 보장할 수 없다.
+        printSubject(5);
+    }
+
+    public static void printSubject(int num) {
+
         String subjectText = "";
 
         switch (num) {
@@ -35,7 +54,6 @@ public class Application {
             case Subjects.JDBC : subjectText = "JDBC"; break;
             case Subjects.ORACLE : subjectText = "ORACLE"; break;
         }
-
         System.out.println("subjectText : " + subjectText);
     }
 }
