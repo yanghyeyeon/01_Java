@@ -68,6 +68,21 @@ public class Application1 {
             e.printStackTrace();
         } catch (IOException e) {
             throw new RuntimeException(e);
+        } finally {
+
+            if(fin != null) {
+                try {
+                    /*
+                    * 자원을 반납을 하지 않으면(스트림을 닫지 않으면), 장기간 실행중인 프로그램의 경우, 다양한 자원에서 누수(leak)가 발생한다.
+                    * 버퍼를 이용하는 경우 마지막에 flush()로 버퍼에 남아있는 데이터를 강제로 전송해야한다.
+                    * 잔류데이터가 남은 상황에서 추가로 스트림을 사용하면, 데드락(DeadLock) 교착상태가 된다.
+                    * */
+                    fin.close();
+
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
         }
     }
 }
