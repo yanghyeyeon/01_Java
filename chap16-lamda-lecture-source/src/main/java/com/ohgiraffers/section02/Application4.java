@@ -22,5 +22,18 @@ public class Application4 {
         /* UnaryOperator<T>#apply(T t) : T : T를 연산하여 T를 리턴한다. */
         UnaryOperator<String> unaryOperator = (str) -> str + "world";
         System.out.println(unaryOperator.apply("hello"));
+
+
+        /* 목차. 3. DoubleBinaryOperator#applyAsDouble(double d1, double d2) : double : 매개변수 두 개를 이용하여 연산 후 double 타입으로 리턴한다. */
+
+        /* 목차. 4. DoubleUnaryOperator#applyAsDouble(double d) : double : 매개변수 한 개를 이용하여 연산 후 double 타입으로 리턴한다. */
+
+        /* 목차. 5. IntBinaryOperator#applyAsInt(int i1, int i2) : int : 매개변수 두 개를 이용하여 연산 후 int 타입으로 리턴한다. */
+
+        /* 목차. 6. IntUnaryOperator#applyAsInt(int i) : int : 매개변수 한 개를 이용하여 연산 후 int 타입으로 리턴한다. */
+
+        /* 목차. 7. LongBinaryOperator#applyAsLong(long l1, long l2) : long : 매개변수 두 개를 이용하여 연산 후 long 타입으로 리턴한다. */
+
+        /* 목차. 8. LongUnaryOperator#applyAsLong(long l) : long : 매개변수 한 개를 이용하여 연산 후 long 타입으로 리턴한다. */
     }
 }
