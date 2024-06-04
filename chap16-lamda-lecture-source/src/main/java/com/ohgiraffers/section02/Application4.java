@@ -9,7 +9,7 @@ public class Application4 {
 
         /*
         * Operator : 매개변수와 리턴값이 있는 applyXXX() 메소드를 가지고 있다
-        *            Function과 거의 유사 하지만 다른 점은 매개변수를 이영헤 연산을 한 후
+        *            Function과 거의 유사 하지만 다른 점은 매개변수를 이용해 연산을 한 후
         *            동일한 타입으로 리턴해주는 것이 다르다.
         * */
 
