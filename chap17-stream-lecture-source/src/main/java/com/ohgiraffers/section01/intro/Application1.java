@@ -1,5 +1,9 @@
 package com.ohgiraffers.section01.intro;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Application1 {
 
     public static void main(String[] args) {
@@ -21,5 +25,14 @@ public class Application1 {
         * 3. 스트림은 작업을 내부적으로 반복처리한다.
         * 4. 스트림은 작업을 병렬로 처리할 수 있다. (멀티쓰레드)
         * */
+
+        List<String> stringList = new ArrayList<String>(Arrays.asList("hello","world","stream"));
+
+        System.out.println("============== stream 사용이전 ==============");
+        for (String str : stringList) {
+            System.out.println(str);
+        }
+
+        System.out.println("============== stream 사용이후 ==============");
     }
 }
