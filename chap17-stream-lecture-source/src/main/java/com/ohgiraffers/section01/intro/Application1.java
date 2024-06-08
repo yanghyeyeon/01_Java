@@ -2,6 +2,7 @@ package com.ohgiraffers.section01.intro;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class Application1 {
@@ -26,7 +27,7 @@ public class Application1 {
         * 4. 스트림은 작업을 병렬로 처리할 수 있다. (멀티쓰레드)
         * */
 
-        List<String> stringList = new ArrayList<String>(Arrays.asList("hello","world","stream"));
+        List<String> stringList = new ArrayList<String>(Arrays.asList("e","a","d","b","c","a"));
 
         System.out.println("============== stream 사용이전 ==============");
         for (String str : stringList) {
@@ -34,5 +35,21 @@ public class Application1 {
         }
 
         System.out.println("============== stream 사용이후 ==============");
+        stringList.stream().forEach(System.out::println);
+
+
+
+        System.out.println("============== stream 연산 ==============");
+        /*
+        * distinct() : 중복을 제거한다.
+        * sorted() : 오름차순으로 정렬 (내림차순 정렬 : Comparator.reverseOrder() )
+        * limit() : 매개변수로 넣은 정수만큼 잘라준다.
+        * */
+        stringList.stream()
+                .distinct()
+                .sorted(Comparator.reverseOrder())
+                .limit(3)
+                .forEach(System.out::println);
+
     }
 }
