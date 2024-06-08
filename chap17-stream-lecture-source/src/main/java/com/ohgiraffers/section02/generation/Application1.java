@@ -20,8 +20,27 @@ public class Application1 {
         Stream<String> strStream2 = Arrays.stream(sarr,0,2);
         strStream2.forEach(System.out::println);
 
+
+        System.out.println("=============== List를 스트림으로 변환 ===============");
+
         List<String> stringList = Arrays.asList("html","css","javascript"); // asList로 만들었을땐 수정,삭제 불가
-        
+
+        Stream<String> strStream3 = stringList.stream();
+        strStream3.forEach(System.out::println);
+
+        // 컬렉션의 경우 스트림 생성을 생략하고 사용가능
+        System.out.println("=============== List를 바로 ForEach로 출력 ===============");
+        stringList.forEach(System.out::println);
+
+        // Builder를 활용한 스트림 생성
+        System.out.println("=============== builder를 활용한 스트림 생성 ===============");
+        Stream<String> builderStream = Stream.<String>builder()
+                .add("홍길동")
+                .add("유관순")
+                .add("윤봉길")
+                .build();
+
+        builderStream.forEach(System.out::println);
 
     }
 }
